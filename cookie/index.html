@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cookie的设置</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    //cookie是用来保存少量的数据在浏览器中 比如常见的
+//    用户名密码等用户信息
+//    设置cookie
+    document.cookie = 'name = yaoqilin';
+    document.cookie = 'address = anyang';
+
+    var now = new Date();
+    now.setTime(now.getTime()+24*60*60*1000);
+    document.cookie = 'test = 123123;expires ='+now.toGMTString();
+    document.cookie = 'domain=baidu.com;domain=www.baidu.com';
+    document.cookie = 'adf=123 ; path=/';
+</script>
